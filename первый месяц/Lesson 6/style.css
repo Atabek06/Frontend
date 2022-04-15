@@ -1,0 +1,59 @@
+/* .p{
+text-shadow: 5px 5px 2px blueviolet; 
+text-shadow: -5px 5px 2px rgba(0,0,0,0.8);
+}
+.box{
+    margin: 10px 0 0 10px;
+    width: 150px;
+    height: 150px;
+    background-color: sandybrown;
+    box-shadow: -10px -10px 5px rgba(0,0,0,0.2), -5px -5px 5px rgba(255,0,0,0.2);
+} */
+a{
+   transition: all 0.2s;
+     text-decoration: none;
+    display: block;
+    color: rgb(78, 10, 75);
+    
+}
+/*a:hover{
+    color: slateblue;
+    text-decoration: underline;
+}
+a:active{
+    color: black;
+}
+a:focus{
+    color: red;
+}
+a:visited{
+    color: rgb(rgb(91, 14, 94),);
+} */
+/* .qwe{
+    text-decoration: none;
+    transition: width 2s;
+    color: blue;
+}
+.qwe:first-child{
+    font-size: 25px;
+}
+.qwe:last-child{
+    color: rgb(94, 92, 12);
+}
+.qwe:nth-child(3){
+    color: black;
+} */
+.qwe::before{
+    content:'';
+    display: block;
+    width: 80px;
+    height: 1px;
+    background-color:red;
+    transform: scaleX(0);
+}
+.qwe::after{
+    content: 'qwe';
+}
+.qwe:hover::before{
+    transform: scaleX(1);
+}

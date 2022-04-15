@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Practic3</title>
+</head>
+<body>
+   <div class="wrapper">
+        <div class="container pt-5">
+            <form class="mb-5 search">
+                <input type="text" placeholder="искать" id="search__input">
+                <button id="search__btn">Искать</button>
+            </form>
+
+            <div class="row" id="products">
+            </div>
+
+            <div class=" basket__link-wrap">
+                <a target="_blank" href="basket.html" class=" basket__link">
+                    <span id="total">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad" class="ad">
+        <div class="ad__content">
+            <div class="ad__counter">
+                <span id="ad__counter-count">10</span>
+                <button id="closeBtn" disabled="true">закрыть</button>
+            </div>
+            <h3>
+                Я реклама
+            </h3>
+        </div>
+    </div>
+<script src="js/main.js"></script>
+</body>
+</html>

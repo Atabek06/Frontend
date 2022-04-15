@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: relative;
+}
+.sidebar{
+    position: absolute;
+    width: 150px;
+    height: 150vh;
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    transition: all 0.4s;
+    left: -150px;
+    top: 0;
+}
+.circle:hover>.sidebar{
+    left: 0px;
+}
+a{
+    text-decoration: none;
+    color: crimson;
+    margin-top: 20px;
+}

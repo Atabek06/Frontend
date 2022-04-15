@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    position: absolute;
+
+}
+
+.container{
+    padding: 40px 80px;
+}
+
+.header-nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: center;
+  list-style-type: none;
+}
+.header-item{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+text-align: center;
+
+/* white */
+
+color: #FFFFFF;
+
+}
+
+.header-btns{
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    width: 103px;
+     height: 44px;
+    background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+border-radius: 50px;
+border:0;
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+text-align: center;
+
+/* white */
+
+color: #FFFFFF;
+}
+
+.section{
+    width: 100%;
+    height:auto;
+    background: url('./main-screen__bgc.jpg')center/cover;
+}
+
+
+.title{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+line-height: 140%;
+/* or 90px */
+
+
+/* white */
+
+color: #FFFFFF;
+}
+
+.section-text{
+    padding-top: 170px;
+    padding-left: 312px;
+    padding-bottom: 220px;
+}
+
+.mini{
+    display: flex;
+    column-gap: 30px;
+}
+
+.item{
+width: 102px;
+height: 120px;
+background: #121212;
+}
+
+.number1{
+    font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 140%;
+text-align: center;
+
+color: #FFFFFF;
+}
+
+.subtitle1{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 140%;
+/* or 22px */
+
+text-align: center;
+
+/* white */
+
+color: #FFFFFF;
+
+opacity: 0.4;
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    background: #121212;
+}
+
+.numbs{
+   padding: 20px 20px 20px 20px;
+}
+
+.card-content{ 
+    padding-top: 43px;
+    padding-bottom: 23px;
+    padding-left: 240px;
+    display: flex;
+    column-gap: 80px;
+}
+
+.card-title{
+    display: flex;
+    column-gap: 101px;
+    align-items: center;
+}
+
+.card-btn{
+width: 140px;
+ height: 44px;
+background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+border-radius: 50px;
+border:0;
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+text-align: center;
+
+/* white */
+
+color: #FFFFFF;
+}
+
+.card-subtitle{
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+
+/* white */
+
+color: #FFFFFF;
+
+opacity: 0.4;
+}
+
+.card-subtitle1{
+    color: white;
+}

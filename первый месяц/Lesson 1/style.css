@@ -1,0 +1,21 @@
+table, th, td{
+    border: 1px double black;
+}
+.Unorderlist{
+    font-size: 25px;
+}
+#list1{
+    color: crimson;
+}
+#list2{
+    background-color: darkslateblue;
+}
+#list3{
+    color: darkgreen;
+}
+#list4{
+    font-weight: 1000;
+}
+#list5{
+    color: darkslateblue;
+}

@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #242B33;
+    margin-top: 50px;
+}
+h1 {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.08em;
+    color: rgba(212, 193, 127, 1);
+    font-family: 'Dancing Script', cursive;
+    animation-duration: 2s;
+    animation-name: clicker;
+}
+@keyframes clicker {
+  from {
+    margin-right: 10%;
+    width: 0%;
+  }
+
+  to {
+    margin-right: 100%;
+    width: 100%;
+  }
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 auto 0 auto;
+}
+.flex button{
+    width: 40px;
+    font-size: 1.5em;
+    outline: none;
+	border: none;
+    background-color: #242B33;
+    color: rgba(212, 193, 127, 1);
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+.flex button:hover{
+    background-color:rgba(212, 193, 127, 1);
+    color: #242B33;
+}
+input{
+    width: 100px;
+    font-size: 2.5em;
+    padding: 15px 0;
+    background-color: #242B33;
+    color: rgba(212, 193, 127, 1);
+    text-align: center;
+    border-radius: 10px;
+	outline: none;
+	border: none;
+    font-family: 'Dancing Script', cursive;
+}
+.ResetBtn{
+    margin-left: 37%;
+}
+.ResetBtn button{
+    font-size: 25px;
+    letter-spacing: 0.08em;
+    outline: none;
+	border: none;
+    background-color: #242B33;
+    color: rgba(212, 193, 127, 1);
+    font-family: 'Dancing Script', cursive;
+    transition: all 0.4s;
+    animation-duration: 2s;
+    animation-name: reset;
+}
+@keyframes reset {
+  from {
+    margin-left: 88%;
+    width: 0%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 10%;
+  }
+}
+.ResetBtn button:hover{
+    color: #242B33;
+    background-color: rgba(212, 193, 127, 1);
+}
+
+

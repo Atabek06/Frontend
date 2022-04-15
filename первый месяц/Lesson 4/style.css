@@ -1,0 +1,40 @@
+.element_block{
+     padding: 10px 20px 30px 5px; /* ниже это последовательность паддинга по отдельности */
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 30px; 
+    padding-bottom: 5px;
+}
+ .element_string{ /*паддинг тут работает только в случае первой строки */
+    display: inline block;
+    border: 1px solid black;
+
+}
+.element_block1{
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 20px 30px;
+    max-width: 500px;
+     max-height: 150px; 
+    overflow: hidden;
+    overflow: scroll;
+    padding: 10px;;
+}
+.krug{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-radius: 50%;
+    margin-bottom: 500px;
+}
+*{
+    box-sizing: border-box;
+}
+.text{
+    width: 300px;
+    height: 150px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 150px;
+    margin-bottom: 500px;
+}

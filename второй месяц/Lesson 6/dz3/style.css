@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #242b2e;
+}
+.input{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list{
+    text-align: center;
+    margin-top: -30px;
+    color: white;
+}
+#name{
+    width: 200px;
+    height: 30px;
+    border: 1px solid white;
+    color: white;
+    background-color: #242b2e;
+    outline: none;
+}
+#enterbutton{
+    width: 80px;
+    height: 30px;
+    background-color: #242b2e;
+    color: white;
+    margin-left: 5px;
+    font-size: 20px;
+    border: none;
+    transition: all 0.7s;
+}
+#enterbutton:hover{
+    color: rgba(212, 193, 127, 1);
+    transform: rotate(360deg);
+}

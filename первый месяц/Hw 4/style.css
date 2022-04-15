@@ -1,0 +1,43 @@
+.element_block1{
+   display:block;
+   border: 5px solid red; 
+   margin: 20px;
+   padding: 10px;
+}
+.element_block2{
+    display:block;
+    border: 5px solid red; 
+    margin: 20px;
+    padding: 10px;
+ }
+ .element_block3{
+    display:block;
+    border: 5px solid red; 
+    margin: 20px;
+    padding: 10px;
+ }
+ .div1{
+     margin: 20px;
+     width: 400px;
+     height: 200px;
+     border: 1px solid red;
+ }
+ .div2{
+     width: 300px;
+     height: 100px;
+     border: 1px solid green;
+     margin: 50px;
+ }
+ .element_block4{
+     display: block;
+     border: 1px solid red;
+     margin: 20px;
+     padding: 20px;
+     width: 300px;
+ }
+ .element_block5{
+    display: block;
+    border: 1px solid red;
+    margin: 20px;
+    width: 300px;
+}

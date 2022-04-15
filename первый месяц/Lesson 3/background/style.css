@@ -1,0 +1,56 @@
+div{
+    width: 450px;
+    height: 450px;
+    border: 1px solid black;
+    margin: 5px;
+}
+
+
+.background__color{
+    background-color: black; 
+}
+
+.background__image{
+    background-image: url(https://lh3.googleusercontent.com/proxy/Du1jv2g8sAMDfJUX5LEbw7U6uW-BwCJJkgfIjpKB5kjIyzKsA9f9iQSKA2ShOStphCsA_M48XxXr5NihGG0e8Jh87AECAmS7b_ORcAcsg_lYz2FYi03EQekC);
+    /* background-image: linear-gradient(направление, 1цвет, 2 цвет); */
+}
+
+.background__repeat{
+    background-image: url(https://lh3.googleusercontent.com/proxy/Du1jv2g8sAMDfJUX5LEbw7U6uW-BwCJJkgfIjpKB5kjIyzKsA9f9iQSKA2ShOStphCsA_M48XxXr5NihGG0e8Jh87AECAmS7b_ORcAcsg_lYz2FYi03EQekC);
+
+    background-repeat: repeat; /*  Значение по умолчанию  */
+    background-repeat: no-repeat; /* Устанавливает одно фоновое изображение в элементе без его повторений */
+    background-repeat: repeat-x; /* Фоновый рисунок повторяется только по горизонтали*/
+    background-repeat: repeat-y; /* Фоновый рисунок повторяется только по вертикали.*/
+    background-repeat: space; /* Фоновый рисунок повторяется только по вертикали.*/
+    background-repeat: round; /* Изображение повторяется так, чтобы в области поместилось целое число рисунков;
+                                 если это не удаётся сделать, то фоновые рисунки масштабируются.*/
+}
+
+.background__position{
+    background-image: url(https://lh3.googleusercontent.com/proxy/Du1jv2g8sAMDfJUX5LEbw7U6uW-BwCJJkgfIjpKB5kjIyzKsA9f9iQSKA2ShOStphCsA_M48XxXr5NihGG0e8Jh87AECAmS7b_ORcAcsg_lYz2FYi03EQekC);
+    background-repeat: no-repeat;
+
+     background-position: 50% 50%; /* или (center center), так же можно позиционировать пикселями: первое 
+                                      значение по вертиккали, а второй по горизонтали   */
+}
+
+.background__attachment{
+    background-image: url(https://lh3.googleusercontent.com/proxy/Du1jv2g8sAMDfJUX5LEbw7U6uW-BwCJJkgfIjpKB5kjIyzKsA9f9iQSKA2ShOStphCsA_M48XxXr5NihGG0e8Jh87AECAmS7b_ORcAcsg_lYz2FYi03EQekC);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
+    /* подвинул вверх чтобы был виден результат */
+    position: absolute;
+    top: 0;
+    left: 500px;
+}
+
+.background__size{
+    background-image: url(https://lh3.googleusercontent.com/proxy/Du1jv2g8sAMDfJUX5LEbw7U6uW-BwCJJkgfIjpKB5kjIyzKsA9f9iQSKA2ShOStphCsA_M48XxXr5NihGG0e8Jh87AECAmS7b_ORcAcsg_lYz2FYi03EQekC);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: contain;  /* Масштабирует изображение с сохранением пропорций таким образом, чтобы картинка целиком поместилась внутрь блока. То есть по меньшей стороне картинки */
+     background-size: cover; /* Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока. То есть по большей стороне картинки */
+}

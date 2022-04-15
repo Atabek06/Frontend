@@ -1,0 +1,12 @@
+.text{
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.text2{
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+.text3{
+    text-decoration: line-through;
+    text-transform: capitalize;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <div>
+            <p>Имя</p>
+            <input placeholder="Имя" tabindex="1" name="username" type="text">
+        </div>
+        <div>
+            <p>Пароль</p>
+            <input tabindex="2" name="userpass" type="password">
+        </div>
+        <div>
+            <p>Телефон</p>
+            <input tabindex="3" name="userphone" type="tel">
+        </div> 
+        <div>
+            <p>Пол</p>
+            <div>
+                <input checked tabindex="4" name="gender" type="radio" value="male">Мужской
+            </div>
+            <div>
+                <input tabindex="4" name="gender" type="radio" value="female">Женский
+            </div>
+            
+        </div>
+        <div>
+            <p>Имущество</p>
+            <div>
+                <input checked type="checkbox" name="bike" value="yes"> Велосипед
+            </div>
+            <div>
+                <input type="checkbox" name="car" value="yes"> Машина
+            </div>
+            <div>
+                <input disabled type="checkbox" name="house" value="yes"> Квартира
+            </div>
+        </div>
+        <br>
+        <div>
+            <button type="reset">reset</button>
+        
+            
+            <button type="submit">submit</button>
+        </div>
+    </form>
+</body>
+</html>

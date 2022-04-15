@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.svetofor {
+  background: #333;
+  width: 150px;
+  height: 440px;
+  border-radius: 10px;
+  font-size: 70px;
+  text-align:center;
+  padding: 1px 0;
+  border: 6px solid #000;
+  margin: auto;
+}
+.red {
+      background:#666;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-left: 15px;
+      margin-top: 20px;
+      line-height: 120px;
+
+}
+.yellow {
+      background:#666;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-left: 15px;
+      margin-top: 20px;
+      line-height: 120px;
+
+}
+.green {
+      background:#666;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-left: 15px;
+      margin-top: 20px;
+      line-height: 120px;
+
+}

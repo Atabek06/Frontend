@@ -1,0 +1,25 @@
+.flex{
+    display: flex;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+}
+.box1{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.header__items{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(42, 42, 42);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

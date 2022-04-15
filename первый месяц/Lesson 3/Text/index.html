@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- ==========    text-decoration    ============= -->
+
+    <!-- 
+        line-through - Создает перечеркнутый текст (пример).
+        overline - Линия проходит над текстом (пример).
+        underline - Устанавливает подчеркнутый текст (пример).
+        none - Отменяет все эффекты, в том числе и подчеркивания у ссылок, которое задано по умолчанию.
+        inherit - Значение наследуется у родителя. 
+
+        Так же можно указать тип линии(wavy, dotted) и цвет(red, green) 
+    -->
+    <h2> text-decoration</h2>
+    <p class="line-through"> Lorem ipsum dolor sit amet.</p>
+    <p class="overline">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="underline">Lorem ipsum dolor sit amet consectetur.</p>
+    <a class="none" href="#">Lorem, ipsum dolor.</a>
+
+
+    <br><br><br>    
+    <!-- ==========    text-transform    ============= -->
+
+    <!-- 
+        capitalize - Первый символ каждого слова в предложении будет заглавным. Остальные символы свой вид не меняют.
+        lowercase - Все символы текста становятся строчными (нижний регистр).
+        uppercase - Все символы текста становятся прописными (верхний регистр).
+        none - меняет регистр символов.
+        inherit - Наследует значение родителя.
+     -->
+     <h2> text-transform</h2>
+     <p class="capitalize">Lorem ipsum dolor sit amet.</p>
+     <p class="lowerase">Lorem ipsum dolor sit.</p>
+     <p class="uppercase">Lorem ipsum dolor sit amet consectetur.</p>
+
+
+
+     <!-- ==========    как делать якорь    ============= -->
+
+    <!-- нужно дайть id элементу и вписать его с хештегом в атрибут href тега a  -->
+     <h2>  Якорь</h2>
+    <a  href="#text" style="display: block; "> Перейдем к тексту</a> 
+    <!-- много контента -->
+    <p id="text" style="margin-bottom: 1000px;">Lorem ipsum dolor sit amet.</p>
+     
+</body>
+</html>
