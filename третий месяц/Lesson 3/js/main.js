@@ -144,8 +144,7 @@ function addToBasket(e) {
 // удаление товара из корзины
 
 function deleteToBasket(e) {
-    e.preventDefault()
-    const dataset = e.target.dataset
+    const dataset = e.target.dataset;
     const data = {
         id: dataset.id,
         name: dataset.name,
@@ -153,11 +152,15 @@ function deleteToBasket(e) {
     }
 
     let cart = JSON.parse(localStorage.getItem('cart'));
-    if (cart[data.id].count > 0) {
-        cart[data.id].count--
-        cart[data.id].productSumm = cart[data.id].count * data.price
-    } else {
-        alert('Вы не добавляли этот товар в корзину')
+    if (cart[data.id]){
+        if (cart[data.id].count > 1){
+            cart[data.id].count--
+            cart[data.id].productSumm = cart[data.id].count * data.price
+        }else{
+        delete cart[data.id]
+        }
+    }else{
+        alert("Корзинв пуста")
     }
 
     localStorage.setItem('cart', JSON.stringify(cart))
