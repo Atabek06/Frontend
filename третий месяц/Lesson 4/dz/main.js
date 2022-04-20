@@ -9,19 +9,19 @@ xhr.onload = function setToDom() {
     xhrobjs.forEach(xhrobj => {
         document.getElementById('tabl').innerHTML += `
             <div class="obj__block">
-                <ul class="obj__ul">
-                    <li class="obj__li">
-                        <h2 class="name">${xhrobj.name}</h2>
+                <ul>
+                    <li>
+                        <h2>${xhrobj.name}</h2>
                     </li>
-                    <li class="obj__li">${xhrobj.username}</li>
-                    <li class="obj__li">${xhrobj.email}</li>
+                    <li>${xhrobj.username}</li>
+                    <li>${xhrobj.email}</li>
                     <div class="adress">
                         <h3 class="adress">Adress:</h3>
-                        <ul class="adress__ul">
-                            <li class="obj__li">${xhrobj.address.street}</li>
-                            <li class="obj__li">${xhrobj.address.suite}</li>
-                            <li class="obj__li">${xhrobj.address.city}</li>
-                            <li class="obj__li">${xhrobj.address.zipcode}</li>
+                        <ul>
+                            <li>${xhrobj.address.street}</li>
+                            <li>${xhrobj.address.suite}</li>
+                            <li>${xhrobj.address.city}</li>
+                            <li>${xhrobj.address.zipcode}</li>
                         </ul>
                     </div>
                 </ul>
@@ -29,8 +29,6 @@ xhr.onload = function setToDom() {
         `
     })
 }
-
-
 const send = document.querySelector('.send')
 
 function sendUserInfo () {
@@ -65,7 +63,6 @@ function sendUserInfo () {
                 </div>
             `
         }
-
         xhr.setRequestHeader('Content-Type', 'application/json')
 
         xhr.send(JSON.stringify(userinfo))
