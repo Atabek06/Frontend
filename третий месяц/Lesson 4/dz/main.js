@@ -4,6 +4,31 @@ const xhr = new XMLHttpRequest();
 
 xhr.open('GET', url);
 
+xhr.onload = function setToDom() {
+    const xhrobjs = JSON.parse(xhr.response)
+    xhrobjs.forEach(xhrobj => {
+        document.getElementById('tabl').innerHTML += `
+            <div class="obj__block">
+                <ul class="obj__ul">
+                    <li class="obj__li">
+                        <h2 class="name">${xhrobj.name}</h2>
+                    </li>
+                    <li class="obj__li">${xhrobj.username}</li>
+                    <li class="obj__li">${xhrobj.email}</li>
+                    <div class="adress">
+                        <h3 class="adress">Adress:</h3>
+                        <ul class="adress__ul">
+                            <li class="obj__li">${xhrobj.address.street}</li>
+                            <li class="obj__li">${xhrobj.address.suite}</li>
+                            <li class="obj__li">${xhrobj.address.city}</li>
+                            <li class="obj__li">${xhrobj.address.zipcode}</li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        `
+    })
+}
 
 
 const send = document.querySelector('.send')
