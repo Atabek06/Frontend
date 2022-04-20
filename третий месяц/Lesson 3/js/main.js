@@ -160,7 +160,7 @@ function deleteToBasket(e) {
         delete cart[data.id]
         }
     }else{
-        alert("Корзинв пуста")
+        alert("Корзина пуста")
     }
 
     localStorage.setItem('cart', JSON.stringify(cart))

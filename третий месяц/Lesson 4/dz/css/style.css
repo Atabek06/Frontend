@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tabl {
+    display: flex;
+    flex-wrap: wrap;
+}
+.obj__block {
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+.adress {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+.send__place {
+    display: flex;
+    width: fit-content;
+}
+.send {
+    display: block;
+    border: none;
+    margin-top: 20px;
+    width: 100px;
+    height: 20px;
+    border-radius: 20px;
+}
+.send__inp {
+    display: block;
+    margin-left: 10px;
+}
