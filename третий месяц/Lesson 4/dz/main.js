@@ -54,9 +54,7 @@ function sendUserInfo () {
             document.getElementById('tabl').innerHTML += `
                 <div class="obj__block">
                     <ul>
-                        <li>
-                            <h2 class="name">${xhrobjs.name}</h2>
-                        </li>
+                        <li>${xhrobjs.name}</li>
                         <li>${xhrobjs.username}</li>
                         <li>${xhrobjs.email}</li>
                     </ul>
