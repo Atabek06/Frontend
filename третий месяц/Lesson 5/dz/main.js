@@ -16,12 +16,12 @@ function getUser(){
             console.log(data)
             data.forEach(e => {
                 div.innerHTML += `
-                    <ul>
-                        <p>Name:${e.name}</p>
-                        <li>Id: ${e.id}</li>
-                        <li>Username: ${e.username}</li>
-                        <li>Email: ${e.email}</li>
-                    </ul>
+                        <ul>
+                            <p>Name:${e.name}</p>
+                            <li>Id: ${e.id}</li>
+                            <li>Username: ${e.username}</li>
+                            <li>Email: ${e.email}</li>
+                        </ul>
                 `
             })
 
