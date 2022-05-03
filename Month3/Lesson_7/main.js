@@ -41,7 +41,7 @@ const myFetch = (method, URL) => {
             if (xhr.status == 200){
                 resolve(xhr.response)
             }else if(xhr.status == 404){
-                reject(xhr.status)
+                reject( 'Ошибка ' + xhr.status)
             }
         }
         xhr.send()

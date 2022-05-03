@@ -1,7 +1,7 @@
 //CRUD  Это 4 основных операций работ с базами данных
 const URL = 'https://jsonplaceholder.typicode.com/users';
 
-const searchName = document.getElementById('searchUsername');
+const searchName = document.getElementById('searchUserName');
 const searchEmail = document.getElementById('searchEmail');
 const searchBtn = document.getElementById('searchBtn');
 
