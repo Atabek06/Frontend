@@ -1,6 +1,7 @@
+
 // setTimeout(function (){
 //     console.log("start 3")
-// }, 1000 ) //1000 1 секунда
+// }, 2000 ) //1000 1 секунда
 //
 // setTimeout(function (){
 //     console.log("start 4")
@@ -22,7 +23,7 @@
 // someFunctwo();
 //
 // console.log("end")
-
+//
 // console.log("Hi!");
 //
 // setTimeout(function timeout() {
@@ -53,18 +54,18 @@
 //     console.log("you clicked the button3!")
 // }
 // btn3.addEventListener('click', button3);
-
+//
 // $.on('button', 'click', function onClick() {
 //     setTimeout(function() {
 //         console.log('Hello world!');
 //     }, 2000);
-// }); функция внутри функций
+// }); //функция внутри функций
 
 const start = document.getElementById('start');
 const countPlace = document.getElementById('count')
 
 let count = 0;
-
+//
 start.addEventListener('click', function (){
     // const id = setTimeout(function (){console.log("hello")},1000);
     // const id2 = setTimeout(function (){console.log("hi")}, 2000);

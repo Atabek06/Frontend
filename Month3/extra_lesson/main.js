@@ -1,16 +1,31 @@
-const  arrLength= 3;
-
+const URL = 'https://jsonplaceholder.typicode.com/users';
 
 const promise = new Promise((resolve, reject) =>{
-    const arr =[1,2,3];
-    if (arrLength == arr.length){
-        resolve(arr)
-    }else{
-        reject()
-    }
+    // setTimeout(() =>{
+    //     resolve("success")
+    // }, 1000)
+    // setTimeout( () => {
+    //     reject("error")
+    // }, 1001)
 })
+const getUsers = () => {
+    return new Promise((resolve, reject) => {
+        const  xhr = new XMLHttpRequest();
+        xhr.open('GET', URL)
 
-const onFUlfilled = (arr) => console.log(arr);
-const onReject = () => console.log("ошибка")
+        xhr.onload = () => {
+            if (xhr.status === 200){
+                resolve(xhr.response)
+            }else if (xhr.status === 404){
+                reject('ошибка ' +  xhr.status)
+            }
+        }
 
-promise.then(onFUlfilled, onReject)
+        xhr.send()
+    })
+}
+
+const onFulfilled = (users) => console.log(JSON.parse(users));
+const onReject = (error) => console.log(error);
+
+getUsers().then(onFulfilled).catch(onReject)

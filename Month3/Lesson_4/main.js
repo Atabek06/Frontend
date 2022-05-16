@@ -1,5 +1,5 @@
 const url = 'https://jsonplaceholder.typicode.com/users';
-
+//
 const name = document.getElementById('name');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
