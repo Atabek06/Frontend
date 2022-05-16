@@ -1,0 +1,38 @@
+.reviews{
+    background-color: greenyellow;
+    min-height: 350px;
+    padding:20px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap
+
+}
+.review_item{
+    border-radius:15px;
+    padding:15px;
+    width:350px;
+    background-color:rgb(231.231,231);
+    margin:15px 0;
+    display:flex;
+    flex-direction:column
+}
+.review_user{
+    border-top: 2px solid orange;
+    padding:5px 0;
+    margin-top:10px;
+}
+.review_date{
+    align-self: flex-end;
+    color:wheat;
+}
+.changecolor_btn{
+    width:60px;
+    height:40px;
+    border-radius: 50% ;
+    position: absolute;
+    top:-20px;
+    right:-20px;
+    background-color: hotpink;
+    border:2px solid green;
+    cursor:pointer;
+}

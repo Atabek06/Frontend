@@ -1,0 +1,9 @@
+.link{
+    font-size: 30px;
+    list-style-type: none;
+    transition: all 0.001s;
+}
+.link:hover{
+    color: blue;
+    text-decoration: underline;
+}

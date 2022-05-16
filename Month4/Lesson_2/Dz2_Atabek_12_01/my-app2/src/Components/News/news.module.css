@@ -1,0 +1,7 @@
+.ull{
+    display: flex;
+    justify-content: space-around;
+}
+.link{
+    font-size: 20px;
+}
