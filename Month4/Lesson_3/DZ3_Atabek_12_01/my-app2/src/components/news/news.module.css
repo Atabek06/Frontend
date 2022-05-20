@@ -1,0 +1,14 @@
+.ull{
+    display: flex;
+    justify-content: space-around;
+}
+.link{
+    font-size: 20px;
+    list-style-type: none;
+    transition: all 0.001s;
+}
+.link:hover{
+    color: blue;
+    text-decoration: underline;
+
+}
