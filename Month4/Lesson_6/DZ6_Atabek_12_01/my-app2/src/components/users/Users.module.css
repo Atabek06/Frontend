@@ -1,0 +1,13 @@
+table{
+    width: 100%;
+    border: black;
+}
+td{
+    border: 1px solid grey;
+}
+tr{
+    border: 1px solid black;
+}
+th{
+    border: 1px solid red;
+}
