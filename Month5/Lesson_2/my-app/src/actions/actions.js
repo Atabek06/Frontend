@@ -20,3 +20,9 @@ export const addNameAction = (name) => {
         payload: name
     }
 }
+export const removeNameAction = (name) => {
+    return{
+        type: types.REMOVE_NAME,
+        payload: name
+    }
+}
