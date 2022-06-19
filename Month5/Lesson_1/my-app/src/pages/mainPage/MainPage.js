@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 
+
+
 const MainPage = () => {
     const title = useSelector(state => state.title);
     const dispatch = useDispatch();

@@ -1,4 +1,6 @@
-
+const initialState = {
+    users: []
+}
 
 export const reducer = (state= {title: "", users: []}, action) => {
 
@@ -15,8 +17,7 @@ export const reducer = (state= {title: "", users: []}, action) => {
         return{
             ...state, users: [...state.users, action.payload]
         }
-    }
-    else {
+    } else {
         return state
     }
 }
