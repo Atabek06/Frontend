@@ -1,7 +1,6 @@
 import {types} from "../types";
 const initialState = {
     num: [],
-    number: ""
 }
 
 export const createNumReducer = (state = initialState, action) => {
