@@ -2,5 +2,6 @@ export const types = {
     CHANGE_TITLE: "[TITLE]/CHANGE_TITLE",
     CHANGE_DATA: "[TITLE]/CHANGE_DATA",
     ADD_USER: "[TITLE]/ADD_USER",
-    CLEAR_DATA: "[TITLE]/CLEAR-DATA"
+    CLEAR_DATA: "[TITLE]/CLEAR-DATA",
+   
 }

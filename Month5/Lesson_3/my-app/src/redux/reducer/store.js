@@ -6,5 +6,5 @@ import {userReducer} from "./usersReducer";
 export const rootReducer = combineReducers({
     title: titleReducer,
     input: inputReducer,
-    users: userReducer
+    users: userReducer,
 })

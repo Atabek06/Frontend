@@ -1,6 +1,9 @@
-import {combineReducers} from "redux";
-import { addNumberReducer } from "./numberReducer";
+import { combineReducers } from "redux";
+import { inputReducer } from "./inputReducer";
+import { addNumberReducer } from "./createNumberReducer";
+
 
 export const rootReducer = combineReducers({
-     numbers: addNumberReducer
+    input: inputReducer,
+    numbers: addNumberReducer
 })

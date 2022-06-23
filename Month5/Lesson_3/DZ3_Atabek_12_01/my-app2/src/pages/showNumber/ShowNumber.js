@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+
 
 class ShowNumber extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
@@ -14,4 +13,10 @@ class ShowNumber extends Component {
     }
 }
 
-export default ShowNumber;
+const mapStateToProps = (state) => {
+    return {
+        numbers: state.numbers.numbers
+    }
+}
+
+export default connect(mapStateToProps, null)(ShowNumber);

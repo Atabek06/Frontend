@@ -1,33 +1,50 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { addNumberAction, createNumberAction, clearInputNumberAction } from '../../redux/actions/actions';
+import {
+    changeInputAction,
+    createNumberAction,
+    clearDataAction
+} from '../../redux/actions/actions';
 import ShowNumber from '../showNumber/ShowNumber';
 
 class AddNumber extends Component {
     constructor() {
         super();
+        this.changeInputFunc = this.changeInputFunc.bind(this)
         this.addNumberFunc = this.addNumberFunc.bind(this)
-        this.changeInputNumber = this.changeInputNumber.bind(this)
+    }
+
+    changeInputFunc(e) {
+        const data = {
+            value: e.target.value,
+            name: e.target.name
+        }
+        this.props.changeInputAction(data)
     }
 
     addNumberFunc() {
-        this.props.createNumberAction(this.props.number)
+        this.props.createNumberAction(this.props.data.name)
+
+        const data = { name: 'name' }
+          this.props.clearDataAction(data)
+
     }
 
-    changeInputNumber(e) {
-        this.props.addNumberAction(e.target.value)
-    }
 
     render() {
         return (
             <div>
+                {console.log(this.props.numbers)}
                 <input
-                    type="text"
-                    onChange={this.changeInputNumber}
-                    value={this.props.number}
+                    type="number"
+                    name='name'
+                    onChange={this.changeInputFunc}
+                    value={this.props.data.name}
                 />
                 <button onClick={this.addNumberFunc}>add number</button>
-                <ShowNumber propsNumber={this.props.numbers} />
+
+                <ShowNumber/>
+
             </div>
         );
     }
@@ -35,15 +52,15 @@ class AddNumber extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        number: state.numbers.number,
+        data: state.input.data,
         numbers: state.numbers.numbers
     }
 }
 
 const mapDispatchToProps = {
+    changeInputAction,
     createNumberAction,
-    addNumberAction,
-    clearInputNumberAction
+    clearDataAction
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(AddNumber);
