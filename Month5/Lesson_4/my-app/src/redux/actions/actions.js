@@ -31,6 +31,14 @@ export const handleUsersAction = (users) => {
 
 export const getUsersAction = () => {
     return async function(dispatch) {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        const data = await response.json();
+        dispatch(handleUsersAction(data))
+    }
+}
+
+export const postUsersAction = (data) => {
+    return async function(dispatch) {
         const options = {
             method: "POST",
             headers:{
@@ -39,8 +47,8 @@ export const getUsersAction = () => {
             body: JSON.stringify(data)
         }
         const response = await fetch('https://jsonplaceholder.typicode.com/users', options)
-        const data = await response.json();
-        dispatch(handleUsersAction(data))
+        const Data = await response.json();
+        dispatch(handleUsersAction(Data))
 
     }
 }
