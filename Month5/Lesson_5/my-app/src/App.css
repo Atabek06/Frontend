@@ -1,0 +1,19 @@
+.menuOpen {
+    transition: 0.5s;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: gray;
+    width: 50%;
+    padding: 15px;
+}
+
+.menuClose {
+    transition: 0.5s;
+    position: absolute;
+    top: 40px;
+    left: -100%;
+    background: gray;
+    width: 50%;
+    padding: 15px;
+}
