@@ -14,6 +14,8 @@
     <mapping directory="$PROJECT_DIR$/Month5/Lesson_52" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/dz4/my-app" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/my-app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projectFile" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projectFile/project-hits" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/третий месяц/Lesson 1" vcs="Git" />
   </component>
 </project>
